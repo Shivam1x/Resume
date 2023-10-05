@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+  <title>PROJECT</title>
+  <style>
+    h1{
+  padding: 10px ;
+  border: 5px solid black ;
+  text-align: center ;
+}
+h2{
+  padding: 8px ;
+  border: 3px solid black ;
+  text-align: center ;
+  margin: 10px ;
+}
+input[type ="text"],
+input[type ="email"],
+input[type ="password"],
+input[type ="number"],
+input[type ="submit"],
+input[type ="reset"],
+button,
+textarea {
+  width: 100%;
+  border-radius: 5 ;
+}
+body{
+  margin: 15px ;
+  padding: 10px ;
+  border: 2px solid black ;
+}
+
+  </style>
+</head>
+
+<body>
+<form action="">
+  <h1>PAYMENT FORM</h1>
+  <hr>
+  <h2>PERSONAL INFORMATION</h2>
+  <hr>
+  NAME:- <input type="text" name="name" id="name" required>
+  <hr>
+  <fieldset>
+    <legend>Gemder</legend>
+    MALE <input type="radio" name="gender" id="gender" required>
+    FEMALE <input type="radio" name="gender" id="gender" required>
+    OTHER <input type="radio" name="gender" id="gender" required>
+  </fieldset>
+  <hr>
+  ADDRESS <textarea name="" id="" cols="30" rows="2"></textarea>
+  <hr>
+  EMAIL <input type="email" name="email" id="email" required>
+  <hr>
+  PASSWORD <input type="password" name="password" id="password" required>
+  <hr>
+  <h2>PAYMENT INFORMATION</h2>
+  <hr>
+  PAYMENT METHOD:<select name="select" id="select" required>
+    <option value="--Select payment method--">--Select payment method--</option>
+    <option value="GOOGLE PAY">GOOGLE PAY</option>
+    <option value="PHONE PAY">PHONE PAY</option>
+    <option value="PAYTM">PAYTM</option>
+  </select>
+  <hr>
+  PAYMENT AMOUNT <input type="number" name="amount" id="amount" required>
+  <hr>
+  PAYMENT DATE <input type="date" name="date" id="date">
+  <hr>
+  <input type="reset" value="Reset">
+  <hr>
+  <button type="submit">Submit</button>
+</form>
+</body>
+
+</html>
